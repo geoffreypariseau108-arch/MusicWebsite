@@ -6,7 +6,7 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            About Geoff Pariseau
+            About Geoffrey Pariseau
           </h1>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-600 to-blue-600 mx-auto"></div>
         </div>
@@ -16,13 +16,13 @@ export default function About() {
             <div className="absolute -inset-4 bg-gradient-to-r from-cyan-600/30 to-blue-600/30 rounded-lg blur-xl"></div>
             <img
               src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Geoff Pariseau"
+              alt="Geoffrey Pariseau"
               className="relative rounded-lg shadow-2xl w-full"
             />
           </div>
           <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
             <p>
-              Hello, I'm <span className="text-cyan-400 font-semibold">Geoff Pariseau</span> – an electronic soul
+              Hello, I'm <span className="text-cyan-400 font-semibold">Geoffrey Pariseau</span> – an electronic soul
               artist, producer, and storyteller creating music that bridges the gap between the digital
               and the deeply human.
             </p>
@@ -127,10 +127,10 @@ export default function About() {
               share your thoughts on a track, or just say hello, feel free to reach out.
             </p>
             <a
-              href="mailto:hello@geoffpariseau.com"
+              href="mailto:hello@geoffreypariseau.com"
               className="inline-block px-8 py-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full font-semibold transition-all transform hover:scale-105"
             >
-              hello@geoffpariseau.com
+              hello@geoffreypariseau.com
             </a>
           </div>
         </div>

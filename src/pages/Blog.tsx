@@ -75,7 +75,7 @@ This demonstrates how AI can assist in content creation while maintaining your u
         content: mockContent,
         excerpt: `AI-generated content about: ${aiPrompt}`,
         category: 'ai-generated',
-        author: 'Geoff Pariseau (AI-Assisted)',
+        author: 'Geoffrey Pariseau (AI-Assisted)',
         is_published: false,
         created_at: new Date().toISOString(),
         updated_at: new Date().toISOString(),
