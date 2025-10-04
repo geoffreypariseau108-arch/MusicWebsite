@@ -8,25 +8,25 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/20 to-blue-800/20"></div>
         <div
-          className="absolute inset-0 opacity-10"
+          className="absolute inset-0"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+            backgroundImage: 'url(/67B0CB85-0DF9-4953-8D5C-9D971AD8DC4C.jpeg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
         ></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/40 to-blue-800/40"></div>
 
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="mb-6 inline-block">
             <Music2 className="w-20 h-20 text-cyan-400 animate-pulse" />
           </div>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">
-            GEOFFREY PARISEAU
+            GEOFF PARISEAU
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 font-light">
-            Electronic Soul Artist · Producer · Storyteller
+            Electronic Fusion Artist · Producer · Sonic Architect
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
