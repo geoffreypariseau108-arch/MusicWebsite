@@ -23,7 +23,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <Music2 className="w-20 h-20 text-cyan-400 animate-pulse" />
           </div>
           <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 tracking-tight">
-            AURORA
+            GEOFFREY PARISEAU
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 font-light">
             Electronic Soul Artist · Producer · Storyteller

@@ -25,7 +25,7 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
             className="flex items-center space-x-2 text-white hover:text-cyan-400 transition-colors"
           >
             <Music className="w-8 h-8" />
-            <span className="text-xl font-bold">AURORA</span>
+            <span className="text-xl font-bold">GEOFFREY PARISEAU</span>
           </button>
 
           <div className="hidden md:flex items-center space-x-8">
