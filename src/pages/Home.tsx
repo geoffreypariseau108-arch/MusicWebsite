@@ -11,7 +11,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: 'url(/67B0CB85-0DF9-4953-8D5C-9D971AD8DC4C.jpeg)',
+            backgroundImage: 'url(https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?auto=compress&cs=tinysrgb&w=1920)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
