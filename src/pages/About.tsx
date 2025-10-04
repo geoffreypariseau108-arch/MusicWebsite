@@ -22,8 +22,8 @@ export default function About() {
           </div>
           <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
             <p>
-              Hello, I'm <span className="text-cyan-400 font-semibold">Geoff Pariseau</span> – an electronic soul
-              artist, producer, and storyteller creating music that bridges the gap between the digital
+              Hello, I'm <span className="text-cyan-400 font-semibold">Geoff Pariseau</span> – an electronic fusion
+              artist, producer, and sonic architect creating music that bridges the gap between the digital
               and the deeply human.
             </p>
             <p>
