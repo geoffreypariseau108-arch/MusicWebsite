@@ -26,7 +26,7 @@ export default function Home({ onNavigate }: HomeProps) {
             GEOFF PARISEAU
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 font-light">
-            Electronic Fusion Artist · Producer · Sonic Architect
+            Electronic Soul Artist · Producer · Sonic Architect
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
