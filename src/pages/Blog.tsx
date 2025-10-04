@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Calendar, User, Tag, BookOpen, X } from 'lucide-react';
+import { Calendar, User, Tag, Sparkles, BookOpen, X } from 'lucide-react';
 import { supabase, BlogPost } from '../lib/supabase';
 
 export default function Blog() {
@@ -7,6 +7,9 @@ export default function Blog() {
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<string>('all');
+  const [showAIGenerator, setShowAIGenerator] = useState(false);
+  const [aiPrompt, setAiPrompt] = useState('');
+  const [generating, setGenerating] = useState(false);
 
   useEffect(() => {
     fetchPosts();
@@ -43,15 +46,63 @@ export default function Blog() {
     });
   };
 
+  const handleGenerateAI = async () => {
+    if (!aiPrompt.trim()) return;
+
+    setGenerating(true);
+
+    setTimeout(() => {
+      const mockContent = `# ${aiPrompt}
+
+This is an AI-generated blog post based on your prompt. In a production environment, this would integrate with an AI service like OpenAI's GPT-4 or Anthropic's Claude.
+
+## Key Points
+
+The content would be generated based on your specific requirements and would include:
+
+- Relevant insights about the topic
+- Engaging storytelling elements
+- Personal perspectives and experiences
+- Call-to-action for readers
+
+## Conclusion
+
+This demonstrates how AI can assist in content creation while maintaining your unique voice and style.`;
+
+      const mockPost: BlogPost = {
+        id: crypto.randomUUID(),
+        title: aiPrompt,
+        content: mockContent,
+        excerpt: `AI-generated content about: ${aiPrompt}`,
+        category: 'ai-generated',
+        author: 'Geoffrey Pariseau (AI-Assisted)',
+        is_published: false,
+        created_at: new Date().toISOString(),
+        updated_at: new Date().toISOString(),
+      };
+
+      setSelectedPost(mockPost);
+      setShowAIGenerator(false);
+      setAiPrompt('');
+      setGenerating(false);
+    }, 2000);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Blog</h1>
-          <p className="text-slate-300 text-lg">
+          <p className="text-slate-300 text-lg mb-8">
             Stories, insights, and updates from my musical journey
           </p>
+          <button
+            onClick={() => setShowAIGenerator(true)}
+            className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-full font-semibold transition-all transform hover:scale-105"
+          >
+            <Sparkles className="w-5 h-5" />
+            <span>Generate with AI</span>
+          </button>
         </div>
 
         <div className="flex justify-center mb-12 space-x-4 flex-wrap gap-2">
@@ -164,6 +215,55 @@ export default function Blog() {
           </div>
         )}
 
+        {showAIGenerator && (
+          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+            <div className="bg-slate-800 rounded-lg max-w-2xl w-full p-6">
+              <div className="flex justify-between items-center mb-6">
+                <h2 className="text-2xl font-bold text-white flex items-center space-x-2">
+                  <Sparkles className="w-6 h-6 text-purple-400" />
+                  <span>AI Blog Generator</span>
+                </h2>
+                <button
+                  onClick={() => setShowAIGenerator(false)}
+                  className="text-slate-400 hover:text-white transition-colors"
+                >
+                  <X className="w-6 h-6" />
+                </button>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-slate-300 mb-2 font-medium">
+                    What would you like to write about?
+                  </label>
+                  <input
+                    type="text"
+                    value={aiPrompt}
+                    onChange={(e) => setAiPrompt(e.target.value)}
+                    placeholder="e.g., My experience with music production software"
+                    className="w-full px-4 py-3 bg-slate-900 text-white border border-slate-700 rounded-lg focus:outline-none focus:border-purple-600"
+                  />
+                </div>
+                <button
+                  onClick={handleGenerateAI}
+                  disabled={!aiPrompt.trim() || generating}
+                  className="w-full py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white rounded-lg font-bold text-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {generating ? (
+                    <span className="flex items-center justify-center space-x-2">
+                      <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-white"></div>
+                      <span>Generating...</span>
+                    </span>
+                  ) : (
+                    'Generate Blog Post'
+                  )}
+                </button>
+                <p className="text-slate-400 text-xs text-center">
+                  AI will generate a draft blog post based on your topic. You can edit and publish it afterward.
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
