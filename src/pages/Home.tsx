@@ -61,8 +61,8 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative group">
               <img
-                src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="Midnight Dreams"
+                src="/A4E4F3D8-0456-46FA-8894-6B4C94F781AF_1_105_c.jpeg"
+                alt="Reimagine"
                 className="w-full rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent rounded-lg opacity-60"></div>
