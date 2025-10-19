@@ -70,9 +70,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-white">Reimagine</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                My latest single explores the ethereal space between waking and dreaming.
-                Featuring atmospheric production, layered synths, and introspective lyrics
-                that dive deep into late-night consciousness.
+                My latest album reimagines my classics with AI-driven flair, fusing orchestral grandeur, dubstep energy, EDM vibes, and tribal beats. Vocals shine in almost every track. Streamable everywhere now!
               </p>
               <div className="flex items-center space-x-4">
                 <button
