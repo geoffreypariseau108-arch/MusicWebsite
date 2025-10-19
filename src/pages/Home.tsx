@@ -68,7 +68,7 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent rounded-lg opacity-60"></div>
             </div>
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">Midnight Dreams</h3>
+              <h3 className="text-3xl font-bold text-white">Reimagine</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
                 My latest single explores the ethereal space between waking and dreaming.
                 Featuring atmospheric production, layered synths, and introspective lyrics
