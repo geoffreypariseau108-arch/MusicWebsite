@@ -15,7 +15,7 @@ export default function About() {
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-to-r from-cyan-600/30 to-blue-600/30 rounded-lg blur-xl"></div>
             <img
-              src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="/EF18E1FB-7FFC-419E-ACAF-9770969D6246_1_105_c.jpeg"
               alt="Geoffrey Pariseau"
               className="relative rounded-lg shadow-2xl w-full"
             />
