@@ -68,9 +68,9 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent rounded-lg opacity-60"></div>
             </div>
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">Reimagine</h3>
+              <h3 className="text-3xl font-bold text-white">Get Good</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                My latest album reimagines my classics with AI-driven flair, fusing orchestral grandeur, dubstep energy, EDM vibes, and tribal beats. Vocals shine in almost every track. Streamable everywhere now!
+                My latest song has an AI-driven flair, fusing orchestral grandeur, dubstep energy, EDM vibes, it shines with powerful female vocals. Streamable everywhere now!
               </p>
               <div className="flex items-center space-x-4">
                 <button
