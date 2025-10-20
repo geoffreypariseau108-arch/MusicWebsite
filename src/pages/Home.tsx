@@ -70,7 +70,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-white">Get Good</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                My latest song has an AI-driven flair, fusing orchestral grandeur, dubstep energy, EDM vibes, it shines with powerful female vocals. Streamable everywhere now!
+                Geoff's latest song has an AI-driven flair, fusing orchestral grandeur, dubstep energy, EDM vibes, and it shines with powerful female vocals.
               </p>
               <div className="flex items-center space-x-4">
                 <button
@@ -80,7 +80,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   <Headphones className="w-5 h-5" />
                   <span>Get It Now</span>
                 </button>
-                <span className="text-cyan-400 font-bold text-xl">$2.99</span>
+                <span className="text-cyan-400 font-bold text-xl">$.99</span>
               </div>
             </div>
           </div>
