@@ -22,7 +22,7 @@ export default function About() {
           </div>
           <div className="space-y-6 text-slate-300 text-lg leading-relaxed">
             <p>
-              Inspired by artists such as Avicii, Skrillex, and Owl City, the Geoff began recording original music using digital audio workstations in 2012, while having maintained basic proficiency on piano and guitar since childhood.
+              Inspired by artists such as Avicii, Skrillex, and Owl City, Geoffrey Pariseau began recording original music using digital audio workstations in 2012, while having maintained basic proficiency on piano and guitar since childhood.
             </p>
             <p>
               He released his debut album, Rise & Shine, featuring songs composed during their initial learning phase, which accounts for their straightforward style. Although composed between 2012 and 2015, the album was not officially released until 2021. Following a five-year hiatus, he issued the EP North Star in March 2024, serving as a reintroduction to music production and an opportunity to reacquaint himself with relevant tools. The five-track EP 309 was released in summer 2024, includes the first four tracks from an earlier 2016 project, with the title track newly composed that year.
