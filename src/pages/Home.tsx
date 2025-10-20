@@ -61,7 +61,7 @@ export default function Home({ onNavigate }: HomeProps) {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative group">
               <img
-                src="/A4E4F3D8-0456-46FA-8894-6B4C94F781AF_1_105_c.jpeg"
+                src="/EF18E1FB-7FFC-419E-ACAF-9770969D6246_1_105_c copy.jpeg"
                 alt="Reimagine"
                 className="w-full rounded-lg shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
               />
