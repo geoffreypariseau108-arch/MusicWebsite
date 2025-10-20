@@ -124,22 +124,6 @@ export default function Home({ onNavigate }: HomeProps) {
         </div>
       </section>
 
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
-            Join the Community
-          </h2>
-          <p className="text-slate-300 text-lg mb-8">
-            Stay updated with new releases, behind-the-scenes content, and exclusive offers
-          </p>
-          <button
-            onClick={() => onNavigate('blog')}
-            className="px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-full font-semibold transition-all transform hover:scale-105"
-          >
-            Read the Blog
-          </button>
-        </div>
-      </section>
     </div>
   );
 }

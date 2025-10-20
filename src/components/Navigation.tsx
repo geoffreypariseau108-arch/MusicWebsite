@@ -13,7 +13,6 @@ export default function Navigation({ currentPage, onNavigate }: NavigationProps)
     { id: 'home', label: 'Home' },
     { id: 'about', label: 'About' },
     { id: 'shop', label: 'Shop' },
-    { id: 'blog', label: 'Blog' },
   ];
 
   return (

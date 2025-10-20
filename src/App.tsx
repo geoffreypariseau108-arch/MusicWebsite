@@ -3,7 +3,6 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import About from './pages/About';
 import Shop from './pages/Shop';
-import Blog from './pages/Blog';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -16,8 +15,6 @@ function App() {
         return <About />;
       case 'shop':
         return <Shop />;
-      case 'blog':
-        return <Blog />;
       default:
         return <Home onNavigate={setCurrentPage} />;
     }
