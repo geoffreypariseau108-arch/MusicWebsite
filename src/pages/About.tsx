@@ -42,10 +42,9 @@ export default function About() {
               <div className="inline-block p-3 bg-cyan-600/20 rounded-lg mb-4">
                 <Sparkles className="w-8 h-8 text-cyan-400" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-3">2019 - Beginnings</h3>
+              <h3 className="text-2xl font-bold text-white mb-3">2012 - Beginnings</h3>
               <p className="text-slate-400">
-                Started producing music in my bedroom studio, experimenting with electronic sounds and
-                finding my unique voice. Released first demos online to overwhelming support.
+                Started recording original music with digital audio workstations, inspired by Avicii, Skrillex, and Owl City, building on childhood piano and guitar skills.
               </p>
             </div>
             <div className="bg-slate-800/50 p-8 rounded-lg border border-slate-700 hover:border-cyan-600 transition-colors">
@@ -54,8 +53,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">2021 - Breakthrough</h3>
               <p className="text-slate-400">
-                Released debut EP "Wavelengths" which gained recognition in electronic music circles.
-                Performed at local venues and built a dedicated fanbase.
+                Released debut album Rise & Shine, featuring songs composed 2012-2015, marking a milestone despite its straightforward style.
               </p>
             </div>
             <div className="bg-slate-800/50 p-8 rounded-lg border border-slate-700 hover:border-cyan-600 transition-colors">
@@ -64,8 +62,7 @@ export default function About() {
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">2024 - Present</h3>
               <p className="text-slate-400">
-                Released full-length album "Electric Soul" featuring collaborations with talented artists.
-                Currently working on new material and planning my first full tour.
+                Released EPs North Star and 309, blending early 2016 tracks with new material, followed later by AI-enhanced single Get Good in October 2025, featuring powerful female vocals with a strings section that meets dubstep beats.
               </p>
             </div>
           </div>
