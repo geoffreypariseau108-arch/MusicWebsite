@@ -74,7 +74,7 @@ export default function About() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/2A0E7080-1825-48CD-903D-69BE97C2AA8F.jpeg"
               alt="Performance"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
