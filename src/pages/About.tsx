@@ -94,7 +94,7 @@ export default function About() {
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
             <img
-              src="https://images.pexels.com/photos/1481309/pexels-photo-1481309.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/67E412A7-0D8D-4D68-B088-4395F50F8604_1_201_a.jpeg"
               alt="Studio Equipment"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
