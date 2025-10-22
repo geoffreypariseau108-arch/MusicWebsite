@@ -117,7 +117,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </div>
               <h3 className="text-xl font-bold text-white">Instant Access</h3>
               <p className="text-slate-400">
-                Immediate digital downloads after purchase, plus exclusive merchandise
+                Immediate digital downloads after purchase
               </p>
             </div>
           </div>
