@@ -89,7 +89,7 @@ export default function About() {
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
             <img
-              src="https://images.pexels.com/photos/1708912/pexels-photo-1708912.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/FE888EA1-D837-4002-B005-EB6415147BCD_1_105_c.jpeg"
               alt="Recording"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
