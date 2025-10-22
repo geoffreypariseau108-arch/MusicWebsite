@@ -117,10 +117,10 @@ export default function About() {
               share your thoughts on a track, or just say hello, feel free to reach out.
             </p>
             <a
-              href="mailto:hello@geoffpariseau.com"
+              href="mailto:Pariseauenterprise@gmail.com"
               className="inline-block px-8 py-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full font-semibold transition-all transform hover:scale-105"
             >
-              hello@geoffpariseau.com
+              Pariseauenterprise@gmail.com
             </a>
           </div>
         </div>
