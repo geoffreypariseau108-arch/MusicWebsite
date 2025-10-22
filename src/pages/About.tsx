@@ -79,7 +79,7 @@ export default function About() {
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
             <img
-              src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/North Star Album Artwork.png"
               alt="Studio Session"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
