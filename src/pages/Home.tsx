@@ -60,11 +60,11 @@ export default function Home({ onNavigate }: HomeProps) {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative group">
-              <div className="aspect-square bg-slate-800 rounded-lg overflow-hidden flex items-center justify-center p-4">
+              <div className="aspect-square bg-gradient-to-br from-orange-900/30 to-purple-900/30 rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                   src="/EF18E1FB-7FFC-419E-ACAF-9770969D6246_1_105_c copy copy.jpeg"
-                  alt="Reimagine"
-                  className="w-full h-full object-contain shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
+                  alt="Get Good"
+                  className="w-full h-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
