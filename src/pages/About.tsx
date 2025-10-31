@@ -74,9 +74,9 @@ export default function About() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             <img
-              src="/1FBD818A-39CA-49A1-A253-CA7D2264E083_1_102_o.jpeg"
-              alt="Get Good Album Art"
-              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-contain bg-slate-800"
+              src="/2A0E7080-1825-48CD-903D-69BE97C2AA8F.jpeg"
+              alt="Performance"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
             <img
               src="/North Star Album Artwork.png"
@@ -94,13 +94,13 @@ export default function About() {
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
             <img
-              src="/67E412A7-0D8D-4D68-B088-4395F50F8604_1_201_a.jpeg"
-              alt="Studio Equipment"
-              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
+              src="/1FBD818A-39CA-49A1-A253-CA7D2264E083_1_102_o.jpeg"
+              alt="Get Good Album Art"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-contain bg-slate-800"
             />
             <img
-              src="https://images.pexels.com/photos/1464036/pexels-photo-1464036.jpeg?auto=compress&cs=tinysrgb&w=600"
-              alt="Behind the Scenes"
+              src="/67E412A7-0D8D-4D68-B088-4395F50F8604_1_201_a.jpeg"
+              alt="Studio Equipment"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
             />
           </div>
