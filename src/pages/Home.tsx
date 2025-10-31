@@ -60,7 +60,7 @@ export default function Home({ onNavigate }: HomeProps) {
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="relative group">
-              <div className="aspect-square bg-gradient-to-br from-orange-900/30 to-purple-900/30 rounded-lg overflow-hidden flex items-center justify-center">
+              <div className="aspect-square rounded-lg overflow-hidden">
                 <img
                   src="/1FBD818A-39CA-49A1-A253-CA7D2264E083_1_102_o.jpeg"
                   alt="Get Good"
