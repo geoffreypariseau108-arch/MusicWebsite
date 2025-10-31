@@ -95,6 +95,11 @@ export default function About() {
               style={{ objectPosition: 'center' }}
             />
             <img
+              src="/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg"
+              alt="Reimagine Album Art"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
+            />
+            <img
               src="/67E412A7-0D8D-4D68-B088-4395F50F8604_1_201_a.jpeg"
               alt="Studio Equipment"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
