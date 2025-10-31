@@ -91,7 +91,8 @@ export default function About() {
             <img
               src="/1FBD818A-39CA-49A1-A253-CA7D2264E083_1_102_o.jpeg"
               alt="Get Good Album Art"
-              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-contain bg-slate-800"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
+              style={{ objectPosition: 'center' }}
             />
             <img
               src="/67E412A7-0D8D-4D68-B088-4395F50F8604_1_201_a.jpeg"
