@@ -86,7 +86,7 @@ export default function About() {
             <img
               src="/309 Cover Art.png"
               alt="Live Performance"
-              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-contain bg-slate-800"
             />
             <img
               src="/FE888EA1-D837-4002-B005-EB6415147BCD_1_105_c.jpeg"
