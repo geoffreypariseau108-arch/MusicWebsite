@@ -62,7 +62,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="relative group">
               <div className="aspect-square bg-slate-800 rounded-lg overflow-hidden">
                 <img
-                  src="/EF18E1FB-7FFC-419E-ACAF-9770969D6246_1_105_c copy.jpeg"
+                  src="/EF18E1FB-7FFC-419E-ACAF-9770969D6246_1_105_c copy copy.jpeg"
                   alt="Reimagine"
                   className="w-full h-full object-contain shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                 />
