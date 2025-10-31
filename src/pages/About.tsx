@@ -81,7 +81,7 @@ export default function About() {
             <img
               src="/North Star Album Artwork.png"
               alt="Studio Session"
-              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-contain bg-slate-800"
             />
             <img
               src="/309 Cover Art.png"
