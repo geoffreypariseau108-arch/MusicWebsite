@@ -71,7 +71,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-white">Reimagine</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Geoff's latest album is an AI-driven Reimagining of his past music, fusing orchestral grandeur, dubstep energy, EDM vibes, plus it shines with powerful vocals. Streamable everywhere now!
+                Geoff's latest album is an AI-driven Reimagining of his past music, fusing orchestral grandeur, dubstep energy, EDM vibes, and it shines with powerful vocals. Streamable everywhere now!
               </p>
               <div className="flex items-center space-x-4">
                 <button
