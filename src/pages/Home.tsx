@@ -62,7 +62,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="relative group">
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img
-                  src="/1FBD818A-39CA-49A1-A253-CA7D2264E083_1_102_o.jpeg"
+                  src="/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o copy.jpeg"
                   alt="Get Good"
                   className="w-full h-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                 />
