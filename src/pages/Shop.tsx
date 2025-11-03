@@ -104,11 +104,11 @@ export default function Shop() {
                 key={product.id}
                 className="bg-slate-800/50 rounded-lg overflow-hidden border border-slate-700 hover:border-cyan-600 transition-all hover:transform hover:scale-105"
               >
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative aspect-square overflow-hidden">
                   <img
                     src={product.image_url}
                     alt={product.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain bg-slate-900"
                   />
                   <div className="absolute top-4 right-4">
                     <span className="px-3 py-1 bg-slate-900/90 text-cyan-400 text-xs font-semibold rounded-full border border-cyan-600">
