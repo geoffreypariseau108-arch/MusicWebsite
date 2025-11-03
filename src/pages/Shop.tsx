@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { ShoppingCart, Plus, Minus, X, Download } from 'lucide-react';
+import { ShoppingCart, Plus, Minus, X, Download, ExternalLink } from 'lucide-react';
 import { supabase, Product, CartItem } from '../lib/supabase';
 
 export default function Shop() {
@@ -141,6 +141,19 @@ export default function Shop() {
                       <span>Add to Cart</span>
                     </button>
                   </div>
+                  {product.name.toLowerCase().includes('reimagine') && (
+                    <div className="mt-4 pt-4 border-t border-slate-700">
+                      <a
+                        href="https://geoffreypariseau.bandcamp.com/album/reimagine"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        <span>Buy on Bandcamp</span>
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
