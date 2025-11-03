@@ -81,7 +81,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   <Headphones className="w-5 h-5" />
                   <span>Get It Now</span>
                 </button>
-                <span className="text-cyan-400 font-bold text-xl">$.99</span>
+                <span className="text-cyan-400 font-bold text-xl">$9.00</span>
               </div>
             </div>
           </div>
