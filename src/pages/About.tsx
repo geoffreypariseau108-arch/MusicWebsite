@@ -25,10 +25,10 @@ export default function About() {
               Inspired by artists such as Avicii, Skrillex, and Owl City, Geoffrey Pariseau began recording original music using digital audio workstations in 2012, while having maintained basic proficiency on piano and guitar since childhood.
             </p>
             <p>
-              He released his debut album, Rise & Shine, featuring songs composed during their initial learning phase, which accounts for their straightforward style. Although composed between 2012 and 2015, the album was not officially released until 2021. Following a five-year hiatus, he issued the EP North Star in March 2024, serving as a reintroduction to music production and an opportunity to reacquaint himself with relevant tools. The five-track EP 309 was released in summer 2024, includes the first four tracks from an earlier 2016 project, with the title track newly composed that year.
+              He released his debut album, Rise & Shine, featuring songs composed during their initial learning phase, which accounts for their straightforward style. Although composed between 2012 and 2015, the album was not officially released until 2021. Following a five-year hiatus, he issued the EP North Star in March 2024, serving as a reintroduction to music production and an opportunity to reacquaint himself with relevant tools. The five-track EP 309 was released in summer 2024, includes the first four tracks from an earlier 2016 project, with the title track newly composed that year. His newest album called Reimagine, released in November 2025, is an AI driven Reimagining of some of his past music.
             </p>
             <p>
-              He maintains an active presence on social media via his Facebook page, X, and Instagram, all under the handle @GeoffreyPariseau.
+              He maintains a presence on social media via his Facebook page, X, and Instagram, all under the handle @GeoffreyPariseau.
             </p>
           </div>
         </div>
