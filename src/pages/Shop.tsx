@@ -129,29 +129,70 @@ export default function Shop() {
                   <p className="text-slate-400 text-sm mb-4 line-clamp-2">
                     {product.description}
                   </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-2xl font-bold text-cyan-400">
-                      ${product.price.toFixed(2)}
-                    </span>
-                    <button
-                      onClick={() => addToCart(product)}
-                      className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-semibold transition-colors flex items-center space-x-2"
-                    >
-                      <ShoppingCart className="w-4 h-4" />
-                      <span>Add to Cart</span>
-                    </button>
-                  </div>
-                  {product.name.toLowerCase().includes('reimagine') && (
-                    <div className="mt-4 pt-4 border-t border-slate-700">
-                      <a
-                        href="https://geoffreypariseau.bandcamp.com/album/reimagine"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full px-4 py-2 bg-slate-700 hover:bg-slate-600 text-white rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+                  {product.name.toLowerCase().includes('reimagine') ? (
+                    <>
+                      <div className="flex items-center justify-between mb-4">
+                        <span className="text-2xl font-bold text-cyan-400">
+                          ${product.price.toFixed(2)}
+                        </span>
+                        <a
+                          href="https://geoffreypariseau.bandcamp.com/album/reimagine"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-semibold transition-colors flex items-center space-x-2"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                          <span>Buy on Bandcamp</span>
+                        </a>
+                      </div>
+                      <div className="flex items-center justify-center space-x-4 pt-4 border-t border-slate-700">
+                        <a
+                          href="https://open.spotify.com/album/0TSe1kbWUS0TsKktpFfmfr?si=kInBbiA5RI2yVUPHGsV7aQ"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-green-500 hover:text-green-400 transition-colors"
+                          aria-label="Listen on Spotify"
+                        >
+                          <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                          </svg>
+                        </a>
+                        <a
+                          href="https://youtube.com/playlist?list=OLAK5uy_nZXMSlDYxcmV4yIeUlZkGxLho1kQlYlek&si=9JCaxH84PEL6iveM"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-red-500 hover:text-red-400 transition-colors"
+                          aria-label="Listen on YouTube"
+                        >
+                          <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                          </svg>
+                        </a>
+                        <a
+                          href="https://www.amazon.com/dp/B0G1M58256/ref=sr_1_2?crid=GYLHJWLWARYA&dib=eyJ2IjoiMSJ9.duRB7JsZE_clORAasZ7HU_5BivkgtZukI7PLcLtUwqCE1ghUS6P5BM6Sz71BtIYuCDCB77iJE6bIzJO9uhU0VSH3FXfO4Lc_BtHMFN6Wb6fEPK4SX7Qm8Y8GxH_uilQK-DCTtPRS_43cuAEBH_GoOnFRepDcFXBRwp4zb0ORZGWEI_sHPo0rnC9NprkVmQiWDQjGYvNHp-yiH5ordBBO3g-H_wxAv6_C3US_XTKtzes.xFMGjvD0BpuRxRrvardTynQeFTgKCE67lbQyuzPOgHs&dib_tag=se&keywords=geoffrey+pariseau&qid=1763064509&s=dmusic&sprefix=%2Cdigital-music%2C118&sr=1-2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-orange-500 hover:text-orange-400 transition-colors"
+                          aria-label="Listen on Amazon Music"
+                        >
+                          <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.164-.61.348-.977.541-.5.255-.796.39-.89.41a15.89 15.89 0 0 1-5.4.972c-3.17 0-6.203-.644-9.105-1.933-.25-.104-.505-.225-.765-.355l-.945-.49c-.15-.09-.224-.18-.224-.28 0-.078.054-.14.15-.186zm8.47-4.24c.75-.015 1.478.066 2.19.24.72.18 1.29.495 1.71.945.42.45.63 1.08.63 1.89 0 .744-.18 1.35-.54 1.815-.36.45-.945.78-1.77 1.005-.6.15-1.29.225-2.07.225h-.06c-.75 0-1.38-.09-1.89-.27-.51-.18-.93-.51-1.26-.99-.33-.48-.495-1.08-.495-1.8 0-.735.18-1.335.54-1.785.36-.465.93-.795 1.71-1.005.6-.15 1.275-.225 2.025-.225.015 0 .03-.015.045-.015.015 0 .03-.015.045-.015zm6.75-9.9c-.27.015-.495.09-.66.255-.18.165-.345.45-.51.855-.54 1.29-1.065 2.625-1.59 4.005-.525 1.38-1.035 2.745-1.53 4.11-.12.345-.285.735-.495 1.17-.21.435-.525.78-.945 1.035-.42.255-.87.39-1.38.39l-.03-.045c-.63-.045-1.2-.21-1.71-.495-.51-.285-.93-.72-1.245-1.305-.315-.585-.48-1.29-.48-2.13 0-.27.015-.54.045-.825.03-.285.075-.525.105-.705.045-.24.09-.435.135-.585.045-.15.12-.255.255-.315a.49.49 0 0 1 .315-.015c.12.045.195.15.195.33-.015.18-.045.405-.09.69-.045.285-.075.585-.075.915 0 .6.09 1.125.27 1.575.18.45.435.81.78 1.065.345.255.72.405 1.14.45.27.03.51-.03.735-.195.225-.165.435-.42.63-.765.195-.345.405-.795.63-1.35.45-1.125.915-2.325 1.41-3.6.495-1.29 1.005-2.55 1.53-3.78.105-.24.225-.495.345-.78.12-.285.285-.54.495-.765.21-.225.495-.36.855-.39a.48.48 0 0 1 .405.135c.105.09.12.225.045.405z"/>
+                          </svg>
+                        </a>
+                      </div>
+                    </>
+                  ) : (
+                    <div className="flex items-center justify-between">
+                      <span className="text-2xl font-bold text-cyan-400">
+                        ${product.price.toFixed(2)}
+                      </span>
+                      <button
+                        onClick={() => addToCart(product)}
+                        className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-semibold transition-colors flex items-center space-x-2"
                       >
-                        <ExternalLink className="w-4 h-4" />
-                        <span>Buy on Bandcamp</span>
-                      </a>
+                        <ShoppingCart className="w-4 h-4" />
+                        <span>Add to Cart</span>
+                      </button>
                     </div>
                   )}
                 </div>
