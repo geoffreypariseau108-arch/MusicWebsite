@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
-import { ShoppingCart, Plus, Minus, X, Download, ExternalLink } from 'lucide-react';
-import { supabase, Product, CartItem } from '../lib/supabase';
+import { Download, ExternalLink } from 'lucide-react';
+import { supabase, Product } from '../lib/supabase';
 
 export default function Shop() {
   const [products, setProducts] = useState<Product[]>([]);
-  const [cart, setCart] = useState<CartItem[]>([]);
-  const [cartOpen, setCartOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   const [filter, setFilter] = useState<'all' | 'single' | 'album' | 'merchandise'>('all');
 
@@ -28,40 +26,6 @@ export default function Shop() {
       setLoading(false);
     }
   };
-
-  const addToCart = (product: Product) => {
-    setCart((prevCart) => {
-      const existingItem = prevCart.find((item) => item.product.id === product.id);
-      if (existingItem) {
-        return prevCart.map((item) =>
-          item.product.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        );
-      }
-      return [...prevCart, { product, quantity: 1 }];
-    });
-    setCartOpen(true);
-  };
-
-  const updateQuantity = (productId: string, delta: number) => {
-    setCart((prevCart) =>
-      prevCart
-        .map((item) =>
-          item.product.id === productId
-            ? { ...item, quantity: Math.max(0, item.quantity + delta) }
-            : item
-        )
-        .filter((item) => item.quantity > 0)
-    );
-  };
-
-  const removeFromCart = (productId: string) => {
-    setCart((prevCart) => prevCart.filter((item) => item.product.id !== productId));
-  };
-
-  const cartTotal = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
-  const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   const filteredProducts = products.filter(
     (product) => filter === 'all' || product.product_type === filter
@@ -234,13 +198,6 @@ export default function Shop() {
                       <span className="text-2xl font-bold text-cyan-400">
                         ${product.price.toFixed(2)}
                       </span>
-                      <button
-                        onClick={() => addToCart(product)}
-                        className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-semibold transition-colors flex items-center space-x-2"
-                      >
-                        <ShoppingCart className="w-4 h-4" />
-                        <span>Add to Cart</span>
-                      </button>
                     </div>
                   )}
                 </div>
@@ -249,103 +206,6 @@ export default function Shop() {
           </div>
         )}
 
-        <button
-          onClick={() => setCartOpen(true)}
-          className="fixed bottom-8 right-8 bg-cyan-600 hover:bg-cyan-500 text-white rounded-full p-4 shadow-2xl transition-all transform hover:scale-110 z-40"
-        >
-          <ShoppingCart className="w-6 h-6" />
-          {cartCount > 0 && (
-            <span className="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold rounded-full w-6 h-6 flex items-center justify-center">
-              {cartCount}
-            </span>
-          )}
-        </button>
-
-        {cartOpen && (
-          <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-            <div className="bg-slate-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-hidden flex flex-col">
-              <div className="p-6 border-b border-slate-700 flex justify-between items-center">
-                <h2 className="text-2xl font-bold text-white">Shopping Cart</h2>
-                <button
-                  onClick={() => setCartOpen(false)}
-                  className="text-slate-400 hover:text-white transition-colors"
-                >
-                  <X className="w-6 h-6" />
-                </button>
-              </div>
-
-              <div className="flex-1 overflow-y-auto p-6">
-                {cart.length === 0 ? (
-                  <div className="text-center py-12">
-                    <ShoppingCart className="w-16 h-16 text-slate-600 mx-auto mb-4" />
-                    <p className="text-slate-400">Your cart is empty</p>
-                  </div>
-                ) : (
-                  <div className="space-y-4">
-                    {cart.map((item) => (
-                      <div
-                        key={item.product.id}
-                        className="flex items-center space-x-4 bg-slate-900/50 p-4 rounded-lg"
-                      >
-                        <img
-                          src={item.product.image_url}
-                          alt={item.product.name}
-                          className="w-20 h-20 object-cover rounded"
-                        />
-                        <div className="flex-1">
-                          <h3 className="text-white font-semibold">{item.product.name}</h3>
-                          <p className="text-cyan-400 font-bold">
-                            ${item.product.price.toFixed(2)}
-                          </p>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                          <button
-                            onClick={() => updateQuantity(item.product.id, -1)}
-                            className="p-1 bg-slate-700 hover:bg-slate-600 text-white rounded transition-colors"
-                          >
-                            <Minus className="w-4 h-4" />
-                          </button>
-                          <span className="text-white font-semibold w-8 text-center">
-                            {item.quantity}
-                          </span>
-                          <button
-                            onClick={() => updateQuantity(item.product.id, 1)}
-                            className="p-1 bg-slate-700 hover:bg-slate-600 text-white rounded transition-colors"
-                          >
-                            <Plus className="w-4 h-4" />
-                          </button>
-                        </div>
-                        <button
-                          onClick={() => removeFromCart(item.product.id)}
-                          className="text-red-400 hover:text-red-300 transition-colors"
-                        >
-                          <X className="w-5 h-5" />
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {cart.length > 0 && (
-                <div className="p-6 border-t border-slate-700">
-                  <div className="flex justify-between items-center mb-4">
-                    <span className="text-xl font-bold text-white">Total:</span>
-                    <span className="text-2xl font-bold text-cyan-400">
-                      ${cartTotal.toFixed(2)}
-                    </span>
-                  </div>
-                  <button className="w-full py-4 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-bold text-lg transition-colors">
-                    Proceed to Checkout
-                  </button>
-                  <p className="text-slate-400 text-xs text-center mt-3">
-                    Secure payment powered by Stripe
-                  </p>
-                </div>
-              )}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
