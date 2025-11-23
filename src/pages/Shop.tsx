@@ -122,26 +122,6 @@ export default function Shop() {
                           </svg>
                         </a>
                         <a
-                          href="https://youtube.com/playlist?list=OLAK5uy_nZXMSlDYxcmV4yIeUlZkGxLho1kQlYlek&si=9JCaxH84PEL6iveM"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-red-500 hover:text-red-400 transition-colors"
-                          aria-label="Listen on YouTube"
-                        >
-                          <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                          </svg>
-                        </a>
-                        <a
-                          href="https://www.amazon.com/dp/B0G1M58256/ref=sr_1_2?crid=GYLHJWLWARYA&dib=eyJ2IjoiMSJ9.duRB7JsZE_clORAasZ7HU_5BivkgtZukI7PLcLtUwqCE1ghUS6P5BM6Sz71BtIYuCDCB77iJE6bIzJO9uhU0VSH3FXfO4Lc_BtHMFN6Wb6fEPK4SX7Qm8Y8GxH_uilQK-DCTtPRS_43cuAEBH_GoOnFRepDcFXBRwp4zb0ORZGWEI_sHPo0rnC9NprkVmQiWDQjGYvNHp-yiH5ordBBO3g-H_wxAv6_C3US_XTKtzes.xFMGjvD0BpuRxRrvardTynQeFTgKCE67lbQyuzPOgHs&dib_tag=se&keywords=geoffrey+pariseau&qid=1763064509&s=dmusic&sprefix=%2Cdigital-music%2C118&sr=1-2"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:opacity-80 transition-opacity"
-                          aria-label="Listen on Amazon Music"
-                        >
-                          <img src="/Amazon logo 2.webp" alt="Amazon Music" className="w-8 h-8 rounded-full" />
-                        </a>
-                        <a
                           href="https://music.apple.com/us/album/reimagine-reimagine/1853165814"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -162,6 +142,15 @@ export default function Shop() {
                           <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
                             <path fill="#7B00FF" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/>
                           </svg>
+                        </a>
+                        <a
+                          href="https://www.amazon.com/dp/B0G1M58256/ref=sr_1_2?crid=GYLHJWLWARYA&dib=eyJ2IjoiMSJ9.duRB7JsZE_clORAasZ7HU_5BivkgtZukI7PLcLtUwqCE1ghUS6P5BM6Sz71BtIYuCDCB77iJE6bIzJO9uhU0VSH3FXfO4Lc_BtHMFN6Wb6fEPK4SX7Qm8Y8GxH_uilQK-DCTtPRS_43cuAEBH_GoOnFRepDcFXBRwp4zb0ORZGWEI_sHPo0rnC9NprkVmQiWDQjGYvNHp-yiH5ordBBO3g-H_wxAv6_C3US_XTKtzes.xFMGjvD0BpuRxRrvardTynQeFTgKCE67lbQyuzPOgHs&dib_tag=se&keywords=geoffrey+pariseau&qid=1763064509&s=dmusic&sprefix=%2Cdigital-music%2C118&sr=1-2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:opacity-80 transition-opacity"
+                          aria-label="Listen on Amazon Music"
+                        >
+                          <img src="/Amazon logo 2.webp" alt="Amazon Music" className="w-8 h-8 rounded-full" />
                         </a>
                       </div>
                     </>
