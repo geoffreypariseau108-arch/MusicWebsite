@@ -12,7 +12,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <title>Geoffrey Pariseau — Electronic Fusion Artist, Producer, Sonic Architect</title>
         <meta
           name="description"
-          content="Official site of Geoffrey Pariseau: Electronic fusion artist, producer, and sonic architect. Discover music, latest releases, and more."
+          content="Official site of Geoffrey Pariseau — featuring 2045, the newest release, streaming now."
         />
         <link rel="canonical" href="https://geoffreypariseau.com/" />
         <meta property="og:type" content="website" />
@@ -23,12 +23,12 @@ export default function Home({ onNavigate }: HomeProps) {
         />
         <meta
           property="og:description"
-          content="Official site of Geoffrey Pariseau: Electronic fusion artist, producer, and sonic architect. Discover music, latest releases, and more."
+          content="Official site of Geoffrey Pariseau — featuring 2045, the newest release, streaming now."
         />
         <meta property="og:url" content="https://geoffreypariseau.com/" />
         <meta
           property="og:image"
-          content="https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg"
+          content="https://geoffreypariseau.com/2045-cover.jpg"
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@GeoffPariseau" />
@@ -38,11 +38,11 @@ export default function Home({ onNavigate }: HomeProps) {
         />
         <meta
           name="twitter:description"
-          content="Official site of Geoffrey Pariseau: Electronic fusion artist, producer, and sonic architect. Discover music, latest releases, and more."
+          content="Official site of Geoffrey Pariseau — featuring 2045, the newest release, streaming now."
         />
         <meta
           name="twitter:image"
-          content="https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg"
+          content="https://geoffreypariseau.com/2045-cover.jpg"
         />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -57,7 +57,10 @@ export default function Home({ onNavigate }: HomeProps) {
               'https://x.com/GeoffPariseau',
               'https://www.facebook.com/profile.php?id=61551675695493',
               'https://www.instagram.com/geoffreypariseau/',
-              'https://www.tiktok.com/@geoffrey_pariseau'
+              'https://www.tiktok.com/@geoffrey_pariseau',
+              'https://open.spotify.com/artist/27sIyPlpIG84463MZza2nZ',
+              'https://music.apple.com/us/artist/geoffrey-pariseau/1228356465',
+              'https://youtube.com/@geoffpariseau'
             ]
           })}
         </script>
@@ -65,17 +68,16 @@ export default function Home({ onNavigate }: HomeProps) {
           {JSON.stringify({
             '@context': 'https://schema.org',
             '@type': 'MusicAlbum',
-            name: 'Reimagine',
+            name: '2045',
             byArtist: {
               '@type': 'Person',
               name: 'Geoffrey Pariseau',
               url: 'https://geoffreypariseau.com/'
             },
-            url: 'https://geoffreypariseau.bandcamp.com/album/reimagine',
             genre: 'Electronic',
             image:
-              'https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg',
-            datePublished: '2025-11-01',
+              'https://geoffreypariseau.com/2045-cover.jpg',
+            datePublished: '2026-09-19',
             inLanguage: 'en'
           })}
         </script>
@@ -182,26 +184,77 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="relative group">
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img
-                  src="/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o copy.jpeg"
-                  alt="Reimagine album cover by Geoffrey Pariseau"
+                  src="/2045-cover.jpg"
+                  alt="2045 cover art by Geoffrey Pariseau"
                   className="w-full h-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
             <div className="space-y-6">
-              <h3 className="text-3xl font-bold text-white">Reimagine</h3>
+              <h3 className="text-3xl font-bold text-white">2045</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                Geoff's latest album is an AI-driven Reimagining of his past music, fusing orchestral grandeur, dubstep energy, EDM vibes, and it shines with powerful vocals. Streamable everywhere now!
+                2045 is Geoffrey&#39;s newest release, out September 19, 2026. Streaming on almost all platforms.
               </p>
-              <div className="flex items-center space-x-4">
-                <button
-                  onClick={() => onNavigate('shop')}
-                  className="px-6 py-3 bg-cyan-600 hover:bg-cyan-500 text-white rounded-lg font-semibold transition-colors flex items-center space-x-2"
+              <div className="flex flex-wrap items-center gap-3">
+                <a
+                  href="https://open.spotify.com/artist/27sIyPlpIG84463MZza2nZ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-slate-800/50 hover:bg-slate-700/50 text-white border border-slate-600 rounded-lg font-semibold transition-colors flex items-center space-x-2"
+                  aria-label="Listen on Spotify"
                 >
                   <Headphones className="w-5 h-5" />
-                  <span>Get It Now</span>
+                  <span>Spotify</span>
+                </a>
+                <a
+                  href="https://music.apple.com/us/artist/geoffrey-pariseau/1228356465"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-slate-800/50 hover:bg-slate-700/50 text-white border border-slate-600 rounded-lg font-semibold transition-colors flex items-center space-x-2"
+                  aria-label="Listen on Apple Music"
+                >
+                  <Headphones className="w-5 h-5" />
+                  <span>Apple Music</span>
+                </a>
+                <a
+                  href="https://youtube.com/@geoffpariseau"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-slate-800/50 hover:bg-slate-700/50 text-white border border-slate-600 rounded-lg font-semibold transition-colors flex items-center space-x-2"
+                  aria-label="Listen on YouTube"
+                >
+                  <Play className="w-5 h-5" />
+                  <span>YouTube</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-2xl font-bold text-white mb-6">Previous release</h3>
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="bg-slate-900/50 rounded-lg border border-slate-700 overflow-hidden hover:border-cyan-600 transition-colors">
+              <div className="aspect-square overflow-hidden">
+                <img
+                  src="/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o copy.jpeg"
+                  alt="Reimagine album cover by Geoffrey Pariseau"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4 flex items-center justify-between">
+                <div>
+                  <p className="text-slate-300 text-sm">Album</p>
+                  <p className="text-white font-semibold">Reimagine</p>
+                </div>
+                <button
+                  onClick={() => onNavigate('shop')}
+                  className="px-4 py-2 bg-cyan-600 hover:bg-cyan-500 text-white rounded-md font-semibold transition-colors"
+                >
+                  Shop
                 </button>
-                <span className="text-cyan-400 font-bold text-xl">$9.00</span>
               </div>
             </div>
           </div>
