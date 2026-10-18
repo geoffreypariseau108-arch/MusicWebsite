@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow common private paths (none used, kept for future)
+# Disallow: /admin/
+
+Sitemap: https://geoffreypariseau.com/sitemap.xml

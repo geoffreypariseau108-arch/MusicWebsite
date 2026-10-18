@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Download, ExternalLink } from 'lucide-react';
 import { supabase, Product } from '../lib/supabase';
+import { Helmet } from 'react-helmet-async';
 
 export default function Shop() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -8,11 +9,17 @@ export default function Shop() {
   const [filter, setFilter] = useState<'all' | 'single' | 'album' | 'merchandise'>('all');
 
   useEffect(() => {
+    if (!supabase) {
+      setLoading(false);
+      setProducts([]);
+      return;
+    }
     fetchProducts();
   }, []);
 
   const fetchProducts = async () => {
     try {
+      if (!supabase) return;
       const { data, error } = await supabase
         .from('products')
         .select('*')
@@ -33,6 +40,37 @@ export default function Shop() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 pt-24 pb-16">
+      <Helmet>
+        <title>Shop — Geoffrey Pariseau Music</title>
+        <meta
+          name="description"
+          content="Support independent music and get instant access to high-quality tracks. Buy the Reimagine album and more from Geoffrey Pariseau."
+        />
+        <link rel="canonical" href="https://geoffreypariseau.com/shop" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Geoffrey Pariseau" />
+        <meta property="og:title" content="Shop — Geoffrey Pariseau Music" />
+        <meta
+          property="og:description"
+          content="Support independent music and get instant access to high-quality tracks. Buy the Reimagine album and more from Geoffrey Pariseau."
+        />
+        <meta property="og:url" content="https://geoffreypariseau.com/shop" />
+        <meta
+          property="og:image"
+          content="https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@GeoffPariseau" />
+        <meta name="twitter:title" content="Shop — Geoffrey Pariseau Music" />
+        <meta
+          name="twitter:description"
+          content="Support independent music and get instant access to high-quality tracks. Buy the Reimagine album and more from Geoffrey Pariseau."
+        />
+        <meta
+          name="twitter:image"
+          content="https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg"
+        />
+      </Helmet>
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Shop</h1>

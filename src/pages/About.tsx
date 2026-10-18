@@ -1,8 +1,57 @@
 import { Mail, Music, Sparkles, Heart } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 
 export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 pt-24 pb-16">
+      <Helmet>
+        <title>About Geoffrey Pariseau — Electronic Fusion Artist</title>
+        <meta
+          name="description"
+          content="Learn about Geoffrey Pariseau, an electronic fusion artist and producer blending orchestral grandeur with modern EDM and dubstep influences."
+        />
+        <link rel="canonical" href="https://geoffreypariseau.com/about" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Geoffrey Pariseau" />
+        <meta property="og:title" content="About Geoffrey Pariseau — Electronic Fusion Artist" />
+        <meta
+          property="og:description"
+          content="Learn about Geoffrey Pariseau, an electronic fusion artist and producer blending orchestral grandeur with modern EDM and dubstep influences."
+        />
+        <meta property="og:url" content="https://geoffreypariseau.com/about" />
+        <meta
+          property="og:image"
+          content="https://geoffreypariseau.com/10756F75-F1CA-4D06-A081-3B8A0FECB130_1_201_a.jpeg"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content="@GeoffPariseau" />
+        <meta name="twitter:title" content="About Geoffrey Pariseau — Electronic Fusion Artist" />
+        <meta
+          name="twitter:description"
+          content="Learn about Geoffrey Pariseau, an electronic fusion artist and producer blending orchestral grandeur with modern EDM and dubstep influences."
+        />
+        <meta
+          name="twitter:image"
+          content="https://geoffreypariseau.com/10756F75-F1CA-4D06-A081-3B8A0FECB130_1_201_a.jpeg"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Geoffrey Pariseau',
+            url: 'https://geoffreypariseau.com/about',
+            jobTitle: 'Electronic Fusion Artist, Producer, Sonic Architect',
+            image:
+              'https://geoffreypariseau.com/10756F75-F1CA-4D06-A081-3B8A0FECB130_1_201_a.jpeg',
+            sameAs: [
+              'https://x.com/GeoffPariseau',
+              'https://www.facebook.com/profile.php?id=61551675695493',
+              'https://www.instagram.com/geoffreypariseau/',
+              'https://www.tiktok.com/@geoffrey_pariseau'
+            ]
+          })}
+        </script>
+      </Helmet>
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
