@@ -193,7 +193,7 @@ export default function Home({ onNavigate }: HomeProps) {
             <div className="space-y-6">
               <h3 className="text-3xl font-bold text-white">2045</h3>
               <p className="text-slate-300 text-lg leading-relaxed">
-                2045 is Geoffrey&#39;s newest release, out September 19, 2026. Streaming on almost all platforms.
+                2045 is Geoffrey&#39;s newest release, out September 19, 2026. Available everywhere you find music.
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <a
