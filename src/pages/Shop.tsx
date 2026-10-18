@@ -9,11 +9,17 @@ export default function Shop() {
   const [filter, setFilter] = useState<'all' | 'single' | 'album' | 'merchandise'>('all');
 
   useEffect(() => {
+    if (!supabase) {
+      setLoading(false);
+      setProducts([]);
+      return;
+    }
     fetchProducts();
   }, []);
 
   const fetchProducts = async () => {
     try {
+      if (!supabase) return;
       const { data, error } = await supabase
         .from('products')
         .select('*')
