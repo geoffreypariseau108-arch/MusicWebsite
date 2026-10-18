@@ -197,7 +197,7 @@ export default function Home({ onNavigate }: HomeProps) {
               </p>
               <div className="flex flex-wrap items-center gap-3">
                 <a
-                  href="https://open.spotify.com/artist/27sIyPlpIG84463MZza2nZ"
+                  href="https://open.spotify.com/album/6pW9ACkEMooB874EI9VoH7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-slate-800/50 hover:bg-slate-700/50 text-white border border-slate-600 rounded-lg font-semibold transition-colors flex items-center space-x-2"
@@ -207,7 +207,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   <span>Spotify</span>
                 </a>
                 <a
-                  href="https://music.apple.com/us/artist/geoffrey-pariseau/1228356465"
+                  href="https://music.apple.com/us/album/2045/6812098916"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-slate-800/50 hover:bg-slate-700/50 text-white border border-slate-600 rounded-lg font-semibold transition-colors flex items-center space-x-2"
@@ -217,7 +217,7 @@ export default function Home({ onNavigate }: HomeProps) {
                   <span>Apple Music</span>
                 </a>
                 <a
-                  href="https://youtube.com/@geoffpariseau"
+                  href="https://youtube.com/playlist?list=OLAK5uy_m_3NLYSTQqLhJud2j3uDV9xlwTY7w_NX0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-6 py-3 bg-slate-800/50 hover:bg-slate-700/50 text-white border border-slate-600 rounded-lg font-semibold transition-colors flex items-center space-x-2"
