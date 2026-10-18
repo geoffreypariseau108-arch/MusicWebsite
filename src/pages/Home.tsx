@@ -9,7 +9,7 @@ export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
       <Helmet>
-        <title>Geoffrey Pariseau — Electronic Fusion Artist, Producer, Sonic Architect</title>
+        <title>Geoffrey Pariseau — Electronic Fusion Artist, Producer, AI Enhanced Sonic Architect</title>
         <meta
           name="description"
           content="Official site of Geoffrey Pariseau — featuring 2045, the newest release, streaming now."
@@ -19,7 +19,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <meta property="og:site_name" content="Geoffrey Pariseau" />
         <meta
           property="og:title"
-          content="Geoffrey Pariseau — Electronic Fusion Artist, Producer, Sonic Architect"
+          content="Geoffrey Pariseau — Electronic Fusion Artist, Producer, AI Enhanced Sonic Architect"
         />
         <meta
           property="og:description"
@@ -34,7 +34,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <meta name="twitter:creator" content="@GeoffPariseau" />
         <meta
           name="twitter:title"
-          content="Geoffrey Pariseau — Electronic Fusion Artist, Producer, Sonic Architect"
+          content="Geoffrey Pariseau — Electronic Fusion Artist, Producer, AI Enhanced Sonic Architect"
         />
         <meta
           name="twitter:description"
@@ -50,7 +50,7 @@ export default function Home({ onNavigate }: HomeProps) {
             '@type': 'Person',
             name: 'Geoffrey Pariseau',
             url: 'https://geoffreypariseau.com/',
-            jobTitle: 'Electronic Fusion Artist, Producer, Sonic Architect',
+            jobTitle: 'Electronic Fusion Artist, Producer, AI Enhanced Sonic Architect',
             image:
               'https://geoffreypariseau.com/10756F75-F1CA-4D06-A081-3B8A0FECB130_1_201_a.jpeg',
             sameAs: [
@@ -101,7 +101,7 @@ export default function Home({ onNavigate }: HomeProps) {
             GEOFFREY PARISEAU
           </h1>
           <p className="text-xl md:text-2xl text-slate-300 mb-8 font-light">
-            Electronic Fusion Artist · Producer · Sonic Architect
+            Electronic Fusion Artist · Producer · AI Enhanced Sonic Architect
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button

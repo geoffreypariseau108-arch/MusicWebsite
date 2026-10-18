@@ -40,7 +40,7 @@ export default function About() {
             '@type': 'Person',
             name: 'Geoffrey Pariseau',
             url: 'https://geoffreypariseau.com/about',
-            jobTitle: 'Electronic Fusion Artist, Producer, Sonic Architect',
+            jobTitle: 'Electronic Fusion Artist, Producer, AI Enhanced Sonic Architect',
             image:
               'https://geoffreypariseau.com/10756F75-F1CA-4D06-A081-3B8A0FECB130_1_201_a.jpeg',
             sameAs: [
