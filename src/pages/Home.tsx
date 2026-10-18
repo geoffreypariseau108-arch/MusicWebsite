@@ -1,5 +1,4 @@
 import { Play, Music2, ShoppingBag, Headphones } from 'lucide-react';
-import { Helmet } from 'react-helmet-async';
 
 interface HomeProps {
   onNavigate: (page: string) => void;
@@ -8,78 +7,6 @@ interface HomeProps {
 export default function Home({ onNavigate }: HomeProps) {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
-      <Helmet>
-        <title>Geoffrey Pariseau — Electronic Fusion Artist, Producer, Sonic Architect</title>
-        <meta
-          name="description"
-          content="Official site of Geoffrey Pariseau: Electronic fusion artist, producer, and sonic architect. Discover music, latest releases, and more."
-        />
-        <link rel="canonical" href="https://geoffreypariseau.com/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="Geoffrey Pariseau" />
-        <meta
-          property="og:title"
-          content="Geoffrey Pariseau — Electronic Fusion Artist, Producer, Sonic Architect"
-        />
-        <meta
-          property="og:description"
-          content="Official site of Geoffrey Pariseau: Electronic fusion artist, producer, and sonic architect. Discover music, latest releases, and more."
-        />
-        <meta property="og:url" content="https://geoffreypariseau.com/" />
-        <meta
-          property="og:image"
-          content="https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@GeoffPariseau" />
-        <meta
-          name="twitter:title"
-          content="Geoffrey Pariseau — Electronic Fusion Artist, Producer, Sonic Architect"
-        />
-        <meta
-          name="twitter:description"
-          content="Official site of Geoffrey Pariseau: Electronic fusion artist, producer, and sonic architect. Discover music, latest releases, and more."
-        />
-        <meta
-          name="twitter:image"
-          content="https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg"
-        />
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Person',
-            name: 'Geoffrey Pariseau',
-            url: 'https://geoffreypariseau.com/',
-            jobTitle: 'Electronic Fusion Artist, Producer, Sonic Architect',
-            image:
-              'https://geoffreypariseau.com/10756F75-F1CA-4D06-A081-3B8A0FECB130_1_201_a.jpeg',
-            sameAs: [
-              'https://x.com/GeoffPariseau',
-              'https://www.facebook.com/profile.php?id=61551675695493',
-              'https://www.instagram.com/geoffreypariseau/',
-              'https://www.tiktok.com/@geoffrey_pariseau'
-            ]
-          })}
-        </script>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'MusicAlbum',
-            name: 'Reimagine',
-            byArtist: {
-              '@type': 'Person',
-              name: 'Geoffrey Pariseau',
-              url: 'https://geoffreypariseau.com/'
-            },
-            url: 'https://geoffreypariseau.bandcamp.com/album/reimagine',
-            genre: 'Electronic',
-            image:
-              'https://geoffreypariseau.com/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o.jpeg',
-            datePublished: '2025-11-01',
-            inLanguage: 'en'
-          })}
-        </script>
-      </Helmet>
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div
           className="absolute inset-0"
@@ -183,7 +110,7 @@ export default function Home({ onNavigate }: HomeProps) {
               <div className="aspect-square rounded-lg overflow-hidden">
                 <img
                   src="/421DAA5C-6406-40D3-B7C3-339AD96DB24E_1_102_o copy.jpeg"
-                  alt="Reimagine album cover by Geoffrey Pariseau"
+                  alt="Get Good"
                   className="w-full h-full object-cover shadow-2xl transform group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
