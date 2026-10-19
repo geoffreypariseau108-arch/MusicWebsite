@@ -88,7 +88,7 @@ export default function Home({ onNavigate }: HomeProps) {
           style={{
             backgroundImage: 'url(/spaceship-background.jpg)',
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'center top',
           }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/40 to-blue-800/40"></div>
