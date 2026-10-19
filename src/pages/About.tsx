@@ -121,7 +121,7 @@ export default function About() {
           <h2 className="text-4xl font-bold text-white text-center mb-12">
             Gallery
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             <img
               src="/2A0E7080-1825-48CD-903D-69BE97C2AA8F.jpeg"
               alt="Performance"
@@ -152,6 +152,16 @@ export default function About() {
               src="/67E412A7-0D8D-4D68-B088-4395F50F8604_1_201_a.jpeg"
               alt="Studio Equipment"
               className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
+            />
+            <img
+              src="/gallery-spaceship.jpg"
+              alt="Geoffrey Pariseau in a spaceship observation deck"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-cover"
+            />
+            <img
+              src="/gallery-2045-city.jpg"
+              alt="2045 artwork: Geoffrey Pariseau in a futuristic city"
+              className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-64 object-contain bg-slate-800"
             />
           </div>
         </div>
