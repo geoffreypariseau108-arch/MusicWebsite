@@ -86,7 +86,7 @@ export default function Home({ onNavigate }: HomeProps) {
         <div
           className="absolute inset-0"
           style={{
-            backgroundImage: 'url(/67E412A7-0D8D-4D68-B088-4395F50F8604.jpeg)',
+            backgroundImage: 'url(/hero-background.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
